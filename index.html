@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Shopping Era</title>
+        <link rel="icon" href="os.png" type="image/icon type">
+
+        <style>
+            body{
+                background-image:url(os.png), linear-gradient(rgb(14, 14, 13),rgb(61, 56, 56));
+            }
+            .top{
+                display: flex;
+                flex-wrap: wrap;
+                background-color:rgb(120, 22, 173) ;
+                height: 20%;
+                width: auto;
+                margin:-10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:center;   
+            }
+            .searchbar{
+                border-radius: 0px;
+                border: 0;
+                outline: 0 none;
+                height: 40px ;
+                width:450px;
+            }
+            .search{
+                height: inherit;
+                width: 28px;
+                background-color: white;
+                border: none;
+                cursor: pointer;
+                margin-left: -5px;
+            }
+            img{
+                margin-bottom: -5px;
+                margin-left: -5px;
+            }
+            .example{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+            }
+            .mySlides {display:none;}
+            
+            .slider{
+                border: 0px;
+                outline: none;
+                height: 50px;
+                width: 30px;
+                color:white;
+                background-color: black;
+                border: ridge;
+                border-radius: 15px;
+                cursor:pointer;
+               
+            }
+            .container {
+                display: flex;
+                flex-wrap:wrap;
+                flex-wrap: inherit;
+                justify-content: center;
+                align-items: center;  
+            }
+            b:hover{
+                color:black
+            }
+            .a1:hover{
+                color: 5px violet; 
+            } 
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+            <a href="AboutVK.html"><img style="filter: brightness(5);" src="os.png" height="100px" width="150px"></a>&emsp;&emsp;
+            <form class="example">
+                <input class="searchbar" type="text" placeholder="Search your products" value="">
+                <button class="search" type="submit"><img src="search.png" height="20px" width="30px"></button>
+            </form>
+            &emsp;&emsp;
+              <div style="display: flex;flex-wrap: wrap;">
+                <button type="button" style="background-color: white;border:groove ;color: black;height: 30px;width: 100px;">
+                    <a style="text-decoration: none; font-size: 20px;color: rgb(114, 229, 56);;" href="login.html"><b>Login</b></a></button>&emsp;
+                <button type="button" style="background-color: white;border:groove ;color: black;height: 30px;width: 200px;">
+                    <a style="text-decoration: none;font-size: 20px;color: rgb(114, 229, 56);;" href="grocery.html"><b>Click for Grocery</b></a></button></div>
+            </div>
+            
+        </header><br><br>
+        
+        <div class="container">
+            <div><button class="slider" onclick="plusDivs(-1)">&#10094;</button></div>&emsp;&emsp;&emsp;
+            <div>
+                <img class="mySlides" src="poco.png" style="height:300px; max-width:100%;">
+            </div>
+            <div>
+                <video controls autoplay style="height:300px; max-width:100%;" class="mySlides">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                </video>
+            </div>
+            <div>
+                <img class="mySlides" src="laptop.jpg" style="height:300px; max-width:100%;">
+            </div>&emsp;&emsp;&emsp;
+        <div><button class="slider" onclick="plusDivs(1)">&#10095;</button></div>
+        </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script><br><br>
+<div class="column">
+<div style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: center;justify-content: space-around;"></a>
+    <a class="a1" href="https://www.google.com/search?q=fridge&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdcBosyxJnuZGSdUJ7nwnYldp6UjAg:1684599059534&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjb96DEpIT_AhXEbN4KHahqB40Q_AUoAXoECAMQAw&biw=1536&bih=746&dpr=1.25">
+        <img src="deals/Fridge.png" alt="Image" width="490px" /></a>
+    <a class="a1" href="https://www.google.com/search?q=AC&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeTyfDTuPjatcIW0SCSqVyVkUNK4w:1684599100659&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjU9O7XpIT_AhUUSmwGHdo-BbEQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
+        <img src="deals/Ac.png" alt="Image" width="490px" /></a>
+    <a class="a1" href="https://www.google.com/search?q=sofa&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeSozXbJmcfpOyh6xPhDbE9JUwqyw:1684599130171&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiHofjlpIT_AhVZEnAKHVaCDbUQ_AUoAXoECAMQAw">
+        <img src="deals/sofa.png" alt="Image" width="490px" /></a>
+    </div>&nbsp;
+<div style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: center;justify-content: space-around;">
+    <a class="a1" href="https://www.google.com/search?q=realme&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdfXqP4IvmFFcnlACP8bRigGZTSPQg:1684598894749&source=lnms&tbm=shop&sa=X&ved=2ahUKEwigj9f1o4T_AhUpTWwGHUqJAbkQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
+        <img src="deals/realme.png" width="490px"/></a>
+    <a class="a1" href="https://www.google.com/search?q=poco&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeNwHsuertPfcnHXWx88HwweCQEmA:1684598943448&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiZvfOMpIT_AhWTdmwGHayaA90Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
+        <img src="deals/poco1.png" alt="Image" width="490px" /></a>
+    <a class="a1" href="https://www.google.com/search?q=powerbank&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEddtiM6Cp2C4AkhAUGonQhoqt9AMFQ:1684599157367&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjokvTypIT_AhXtSGwGHSapCc8Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
+        <img src="deals/powerbank.png" alt="Image" width="490px" /></a>
+</div>
+    </div><br><br>   
+        <center> <a style="font-size:20px;text-decoration: none;background-color: floralwhite; color: rgb(86, 205, 65);border: 3px solid;" href="C:\Users\91799\Downloads\HTML\index.html">Continue for payment</a></center><br>
+        <a  style="font-size:20px;text-decoration: none;background-color: floralwhite;color: rgb(86, 205, 65);
+        width: max-content;border: 3px solid;" href="Customercare.html">Contact Customer care</a>
+       </form>
+    </body>
+</html>
