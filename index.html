@@ -1,150 +1,554 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>New Shopping Era</title>
-        <link rel="icon" href="os.png" type="image/icon type">
-
-        <style>
-            body{
-                background-image:url(os.png), linear-gradient(rgb(14, 14, 13),rgb(61, 56, 56));
-            }
-            .top{
-                display: flex;
-                flex-wrap: wrap;
-                background-color:rgb(120, 22, 173) ;
-                height: 20%;
-                width: auto;
-                margin:-10px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content:center;   
-            }
-            .searchbar{
-                border-radius: 0px;
-                border: 0;
-                outline: 0 none;
-                height: 40px ;
-                width:450px;
-            }
-            .search{
-                height: inherit;
-                width: 28px;
-                background-color: white;
-                border: none;
-                cursor: pointer;
-                margin-left: -5px;
-            }
-            img{
-                margin-bottom: -5px;
-                margin-left: -5px;
-            }
-            .example{
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-            }
-            .mySlides {display:none;}
-            
-            .slider{
-                border: 0px;
-                outline: none;
-                height: 50px;
-                width: 30px;
-                color:white;
-                background-color: black;
-                border: ridge;
-                border-radius: 15px;
-                cursor:pointer;
-               
-            }
-            .container {
-                display: flex;
-                flex-wrap:wrap;
-                flex-wrap: inherit;
-                justify-content: center;
-                align-items: center;  
-            }
-            b:hover{
-                color:black
-            }
-            .a1:hover{
-                color: 5px violet; 
-            } 
-        </style>
-    </head>
-    <body>
-        <header>
-            <div class="top">
-            <a href="AboutVK.html"><img style="filter: brightness(5);" src="os.png" height="100px" width="150px"></a>&emsp;&emsp;
-            <form class="example">
-                <input class="searchbar" type="text" placeholder="Search your products" value="">
-                <button class="search" type="submit"><img src="search.png" height="20px" width="30px"></button>
-            </form>
-            &emsp;&emsp;
-              <div style="display: flex;flex-wrap: wrap;">
-                <button type="button" style="background-color: white;border:groove ;color: black;height: 30px;width: 100px;">
-                    <a style="text-decoration: none; font-size: 20px;color: rgb(114, 229, 56);;" href="login.html"><b>Login</b></a></button>&emsp;
-                <button type="button" style="background-color: white;border:groove ;color: black;height: 30px;width: 200px;">
-                    <a style="text-decoration: none;font-size: 20px;color: rgb(114, 229, 56);;" href="grocery.html"><b>Click for Grocery</b></a></button></div>
-            </div>
-            
-        </header><br><br>
-        
-        <div class="container">
-            <div><button class="slider" onclick="plusDivs(-1)">&#10094;</button></div>&emsp;&emsp;&emsp;
-            <div>
-                <img class="mySlides" src="poco.png" style="height:300px; max-width:100%;">
-            </div>
-            <div>
-                <video controls autoplay style="height:300px; max-width:100%;" class="mySlides">
-                    <source src="video.mp4" type="video/mp4">
-                    <source src="video.ogg" type="video/ogg">
-                </video>
-            </div>
-            <div>
-                <img class="mySlides" src="laptop.jpg" style="height:300px; max-width:100%;">
-            </div>&emsp;&emsp;&emsp;
-        <div><button class="slider" onclick="plusDivs(1)">&#10095;</button></div>
+<head>
+    <meta charset="utf-8">
+    <title>Core Lab</title>
+    <link rel="icon" href="os.png" type="image/icon type">
+    <link rel="stylesheet" href="stl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="top">
+          <a href="AboutVK.html"><img style="filter: brightness(5);display:flex;flex-wrap: wrap;height: 100px; width: 100%;" src="os.png"></a>&emsp;&emsp;
+          <form class="example">
+            <input class="searchbar" type="text" placeholder="Search your products" value=""/>
+            <button class="search" type="submit"><img style="padding-right: 50px;" src="search.png" height="20px" width="30px"></button>
+        </form>
+        &emsp;&emsp;
+          <div style="display: flex;flex-wrap: wrap;padding:15px 0 15px;">
+            <button type="button" style="border: none; background-color: rgb(49, 8, 71);">
+                <a class="side" style="text-decoration: none; font-size: 16px;color: rgb(244, 244, 231);" href="profile.html"><b>Vamshikrishna</b></a></button>&emsp;
+            <button type="button" style=" border: none;background-color: rgb(49, 8, 71);height: 30px;">
+                <a class="side" style="text-decoration: none;font-size: 16px;color: rgb(228, 239, 228);" href="grocery.html"><b>Grocery</b></a></button>&emsp;
+            <button type="button" style="border: none; background-color: rgb(49, 8, 71);height: 30px;">
+                <a class="side" style="text-decoration: none; font-size: 16px;color: rgb(244, 244, 231);" href="Customercare.html"><b>Customer Care</b></a></button>&emsp;
+            <button type="button" style="border: none; background-color: rgb(49, 8, 71);height: 30px;">
+                <a class="side" style="text-decoration: none; font-size: 16px;color: rgb(244, 244, 231);" href="itemadded.php"><b>My Cart</b></a></button>&emsp;
+            <button type="button" style=" border: none;background-color: rgb(49, 8, 71);height: 30px;">
+                <a class="side" style="text-decoration: none;font-size: 18px;color: rgb(228, 239, 228);" href="logout.php"><b>Logout</b></a></button>
+          </div>
         </div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script><br><br>
-<div class="column">
-<div style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: center;justify-content: space-around;"></a>
-    <a class="a1" href="https://www.google.com/search?q=fridge&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdcBosyxJnuZGSdUJ7nwnYldp6UjAg:1684599059534&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjb96DEpIT_AhXEbN4KHahqB40Q_AUoAXoECAMQAw&biw=1536&bih=746&dpr=1.25">
-        <img src="Fridge.png" alt="Image" width="490px" /></a>
-    <a class="a1" href="https://www.google.com/search?q=AC&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeTyfDTuPjatcIW0SCSqVyVkUNK4w:1684599100659&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjU9O7XpIT_AhUUSmwGHdo-BbEQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
-        <img src="Ac.png" alt="Image" width="490px" /></a>
-    <a class="a1" href="https://www.google.com/search?q=sofa&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeSozXbJmcfpOyh6xPhDbE9JUwqyw:1684599130171&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiHofjlpIT_AhVZEnAKHVaCDbUQ_AUoAXoECAMQAw">
-        <img src="sofa.png" alt="Image" width="490px" /></a>
-    </div>&nbsp;
-<div style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: center;justify-content: space-around;">
-    <a class="a1" href="https://www.google.com/search?q=realme&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdfXqP4IvmFFcnlACP8bRigGZTSPQg:1684598894749&source=lnms&tbm=shop&sa=X&ved=2ahUKEwigj9f1o4T_AhUpTWwGHUqJAbkQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
-        <img src="realme.png" width="490px"/></a>
-    <a class="a1" href="https://www.google.com/search?q=poco&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeNwHsuertPfcnHXWx88HwweCQEmA:1684598943448&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiZvfOMpIT_AhWTdmwGHayaA90Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
-        <img src="poco1.png" alt="Image" width="490px" /></a>
-    <a class="a1" href="https://www.google.com/search?q=powerbank&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEddtiM6Cp2C4AkhAUGonQhoqt9AMFQ:1684599157367&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjokvTypIT_AhXtSGwGHSapCc8Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
-        <img src="powerbank.png" alt="Image" width="490px" /></a>
-</div>
-    </div><br><br>   
-        <center> <a style="font-size:20px;text-decoration: none;background-color: floralwhite; color: rgb(86, 205, 65);border: 3px solid;" href="C:\Users\91799\Downloads\HTML\index.html">Continue for payment</a></center><br>
-        <a  style="font-size:20px;text-decoration: none;background-color: floralwhite;color: rgb(86, 205, 65);
-        width: max-content;border: 3px solid;" href="Customercare.html">Contact Customer care</a>
-       </form>
-    </body>
+      </header>
+      <br><br><br><br><br>
+
+  <div class="slideshow-container" >
+    <div class="slide">
+      <img src="lg.gif" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <video controls autoplay muted src="video.mp4" style="max-height: 500px; width: 100%;" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="godreg.jpg" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <img src="mobiles.png" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="fest.jpg" alt="Slide 5">
+    </div>
+
+    <div class="slide-bar">
+      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol"></div>
+    </div>
+
+    <div class="slider-navigation">
+      <div class="sliders left" onclick="side_slide(-1)">
+        <span class="fas fa-angle-left"></span>
+      </div>
+      <div class="sliders right" onclick="side_slide(1)">
+        <span class="fas fa-angle-right"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <div class="thumbnail selected" onclick="selectSlide(0)">
+      <img src="lg.gif" alt="Thumbnail 1">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(1)">
+      <video src="video.mp4" height="40" width="60" alt="Thumbnail 2">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(2)">
+      <img src="godreg.jpg" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(3)">
+      <img src="mobiles.png" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(4)">
+      <img src="fest.jpg" alt="Thumbnail 3">
+    </div>
+  </div><br><br>
+
+
+  <div class="column">
+    <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;"></a>
+        <a class="a1" href="https://www.google.com/search?q=fridge&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdcBosyxJnuZGSdUJ7nwnYldp6UjAg:1684599059534&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjb96DEpIT_AhXEbN4KHahqB40Q_AUoAXoECAMQAw&biw=1536&bih=746&dpr=1.25">
+            <img src="Fridge.png" alt="Image" width="490px" /></a>
+        <a class="a1" href="https://www.google.com/search?q=AC&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeTyfDTuPjatcIW0SCSqVyVkUNK4w:1684599100659&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjU9O7XpIT_AhUUSmwGHdo-BbEQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
+            <img src="Ac.png" alt="Image" width="490px" /></a>
+        <a class="a1" href="https://www.google.com/search?q=sofa&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeSozXbJmcfpOyh6xPhDbE9JUwqyw:1684599130171&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiHofjlpIT_AhVZEnAKHVaCDbUQ_AUoAXoECAMQAw">
+            <img src="sofa.png" alt="Image" width="490px" /></a>
+        </div>&nbsp;
+    <div style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: center;justify-content: space-around;">
+        <a class="a1" href="https://www.google.com/search?q=realme&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdfXqP4IvmFFcnlACP8bRigGZTSPQg:1684598894749&source=lnms&tbm=shop&sa=X&ved=2ahUKEwigj9f1o4T_AhUpTWwGHUqJAbkQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25">
+            <img src="realme.png" width="490px"/></a>
+        <a class="a1" href="https://www.google.com/search?q=poco&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEdeNwHsuertPfcnHXWx88HwweCQEmA:1684598943448&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiZvfOMpIT_AhWTdmwGHayaA90Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
+            <img src="poco1.png" alt="Image" width="490px" /></a>
+        <a class="a1" href="https://www.google.com/search?q=powerbank&rlz=1C1CHBF_enIN985IN985&sxsrf=APwXEddtiM6Cp2C4AkhAUGonQhoqt9AMFQ:1684599157367&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjokvTypIT_AhXtSGwGHSapCc8Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25">
+            <img src="powerbank.png" alt="Image" width="490px" /></a>
+    </div>
+    <br>
+    <br>
+    <div class="form1">
+        <div class="container1">
+            <div class="product">
+                <div>
+                    <img src="product/fridge1.jpg" alt="fridge" height="270" width="200">
+                    <h3>183L Stylish Grandé Design Single Door Refrigerator</h3>
+                    <p>RR20C2Z226U</p>
+                    <p>₹14,980</p>
+                    <form method="POST" action="itemadded.php">
+                        <input type="hidden" name="product_id" value="RR20C2Z226U">
+                        <input type="hidden" name="product_name" value="183L Stylish Grandé Design Single Door Refrigerator">
+                        <input type="number" name="quantity" max="5" value="1">
+                        <input type="hidden" name="price" value="14980">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </div>
+                <div>
+                    <img src="product/fridge2.jpg" alt="fridge" height="270" width="200">
+                    <h3>236L Double Door Refrigerator Digital Inverter Technology </h3>
+                    <p>RT28C3032GS</p>
+                    <p>₹22,890</p>
+                    <form method="POST" action="itemadded.php">
+                        <input type="hidden" name="product_id" value="RT28C3032GS">
+                        <input type="hidden" name="product_name" value="236L Double Door Refrigerator Digital Inverter Technology">
+                        <input type="number" name="quantity" max="5" value="1">
+                        <input type="hidden" name="price" value="22890">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </div>
+                <div>
+                <img src="product/fridge3.jpg" height="270" width="200" alt="fridge">
+                <h3>LG 674 Litres Side By Side Instaview Door-In-Door Refrigerator</h3>
+                <p>GC-X257CQES, Matt Black</p>
+                <p>₹1,72,494</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="GC-X257CQES, Matt Black">
+                <input type="hidden" name="product_name" value="LG 674 Litres Side By Side Instaview Door-In-Door Refrigerator">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="172494">
+                <input type="submit" value="Add to Cart">
+                </form></div>
+                <div>
+                <img src="product/fridge4.jpg" alt="fridge" height="270" width="160">
+                <h3>Whirlpool 240 L Frost Free Triple Door Refrigerator</h3>
+                <p>FP 263D Protton Roy</p>
+                <p>₹28,400</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="FP 263D Protton Roy">
+                <input type="hidden" name="product_name" value="Whirlpool 240 L Frost Free Triple Door Refrigerator">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="28400">
+                <input type="submit" value="Add to Cart">
+                </form>
+                </div>
+                <div>
+                <img src="product/phone1.jpg" alt="mobile" height="270" width="160">
+                <h3>Apple iPhone 14 Pro Max</h3>
+                <p>MQ9T3HN/A</p>
+                <p>₹1,39,899</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="MQ9T3HN/A">
+                <input type="hidden" name="product_name" value="Apple iPhone 14 Pro Max">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="139899">
+                <input type="submit" value="Add to Cart">
+                </form>
+                </div>
+            </div>
+            <div class="product">
+            <div>
+            <img src="product/phone2.jpg" alt="mobile" height="270" width="160">
+            <h3>SAMSUNG Galaxy S21 FE 5G</h3>
+            <p>S21123</p>
+            <p>₹53,999</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="S21123">
+            <input type="hidden" name="product_name" value="SAMSUNG Galaxy S21 FE 5G">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="53999">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+            <img src="product/phone3.jpg" alt="mobile" height="270" width="200">
+            <h3>Oppo Find N2 Flip</h3>
+            <p>OP12N2</p>
+            <p>₹89,999</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="OP12N2">
+            <input type="hidden" name="product_name" value="Oppo Find N2 Flip">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="89999">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+            <img src="product/phone4.jpg" alt="mobile" height="270" width="160">
+            <h3>Samsung Galaxy S22 Ultra 5G</h3>
+            <p>S22U5G</p>
+            <p>₹69,999</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="S22U5G">
+            <input type="hidden" name="product_name" value="Samsung Galaxy S22 Ultra 5G">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="69999">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            <div>
+            <img src="product/ac.jpg" height="270" width="240" alt="ac">
+            <h3>Godrej 1.5 Ton 3 Star Split Inverter split-ac </h3>
+            <p>SIC 18TTC3-WWA</p>
+            <p>₹60,190</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="SIC 18TTC3-WWA">
+            <input type="hidden" name="product_name" value="Godrej 1.5 Ton 3 Star Split Inverter split-ac ">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="60190">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            <div>
+            <img src="product/ac1.jpg" alt="ac" height="270" width="240">
+            <h3>Samsung 1 Ton 3 Star 5 in 1 Convertible Inverter Split AC</h3>
+            <p>AR12CY3YATA</p>
+            <p>₹34,490</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="AR12CY3YATA">
+            <input type="hidden" name="product_name" value="Samsung 1 Ton 3 Star 5 in 1 Convertible Inverter Split AC">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="34490">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            </div>
+            <div class="product">
+            <div>
+            <img src="product/ac2.jpg" alt="Pant" height="270" width="240">
+            <h3>Haier 1.6 Ton 5 Star Inverter Split AC</h3>
+            <p>HSU19E-TXG5BE-INV</p>
+            <p>₹72,490</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="HSU19E-TXG5BE-INV">
+            <input type="hidden" name="product_name" value="Haier 1.6 Ton 5 Star Inverter Split AC">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="72490">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div><div>
+            <img style="padding:95px 0px 95px;" src="product/ac3.jpg" alt="ac" height="80" width="240">
+            <h3>Voltas 1.5 Ton 3 Star Split Inverter AC</h3>
+            <p>183V ADS</p>
+            <p>₹60,190</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="183V ADS">
+            <input type="hidden" name="product_name" value="Voltas 1.5 Ton 3 Star Split Inverter AC">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="60190">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+            <img src="product/fur.jpg" alt="shirt" height="270" width="240">
+            <h3>Modern Suede Sofa set</h3>
+            <p>SUM17RT</p>
+            <p>₹41,999</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="SUM17RT">
+            <input type="hidden" name="product_name" value="Modern Suede Sofa set">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="41999">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+            <img src="product/fur1.jpg" alt="Pant" height="270" width="240">
+            <h3>Casaliving Rolando Wood 4 Seater L Shape Sofa</h3>
+            <p>RHS15U</p>
+            <p>₹14,599</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="RHS15U">
+            <input type="hidden" name="product_name" value="Casaliving Rolando Wood 4 Seater L Shape Sofa">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="14599">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            <div>
+            <img src="product/fur2jpg.webp" height="270" width="240" alt="sofa">
+            <h3>Home Edge Abbey 3 Seater Fabric Sofa</h3>
+            <p>SF12S#U</p>
+            <p>₹22,999</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="SF12S#U">
+            <input type="hidden" name="product_name" value="Home Edge Abbey 3 Seater Fabric Sofa">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="22999">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            </div>
+            <div class="product">
+            <div>
+            <img src="product/fur3.jpg" alt="sofa" height="270" width="240">
+            <h3>L Shape Sofa VT4079 </h3>
+            <p>VT4079</p>
+            <p>₹36,699</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="VT4079">
+            <input type="hidden" name="product_name" value="L Shape Sofa ">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="36699">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+            <img src="product/shirt1.jpg" alt="shirt" height="270" width="200">
+            <h3>Shirt</h3>
+            <p>shirt-123</p>
+            <p>₹500</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="shirt-123">
+            <input type="hidden" name="product_name" value="Shirt">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="500">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div><div>
+            <img src="product/shirt2.jpg" alt="shirt" height="270" width="200">
+            <h3>Shirt</h3>
+            <p>shirt-121</p>
+            <p>₹700</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="shirt-121">
+            <input type="hidden" name="product_name" value="Pant">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="700">
+            <input type="submit" value="Add to Cart">
+            </form>
+            </div>
+            <div>
+                <img src="product/shirt3.jpg" alt="shirt" height="270" width="200">
+                <h3>Shirt</h3>
+                <p>shirt-111</p>
+                <p>₹1000</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="shirt-111">
+                <input type="hidden" name="product_name" value="Shirt">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="1000">
+                <input type="submit" value="Add to Cart">
+                </form>
+                </div>
+            <div>
+            <img src="product/shirt4.jpg" alt="shirt" height="270" width="200">
+            <h3>Shirt</h3>
+            <p>IS223</p>
+            <p>₹1,500</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="IS223">
+            <input type="hidden" name="product_name" value="shirt">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="1500">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+    
+            </div>
+            <div class="product">
+            <div>
+            <img src="product/pant1.jpg" height="300" width="200" alt="pant">
+            <h3>Pant</h3>
+            <p>PJ234</p>
+            <p>₹800</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="PJ234">
+            <input type="hidden" name="product_name" value="Pant">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="800">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            <div>
+            <img src="product/pant2.jpg" alt="Pant" height="300" width="200">
+            <h3>Pant</h3>
+            <p>P21</p>
+            <p>₹2,000</p>
+            <form method="POST" action="itemadded.php">
+            <input type="hidden" name="product_id" value="P21">
+            <input type="hidden" name="product_name" value="Pant">
+            <input type="number" name="quantity" max="5" value="1">
+            <input type="hidden" name="price" value="2000">
+            <input type="submit" value="Add to Cart">
+            </form></div>
+            <div>
+                <img src="product/jean1.jpg" height="300" width="200" alt="Jean">
+                <h3>Jeans</h3>
+                <p>ID:Jean-121</p>
+                <p>₹1,500</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="Jean-121">
+                <input type="hidden" name="product_name" value="Jeans">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="1500">
+                <input type="submit" value="Add to Cart">
+                </form></div>
+                <div>
+                <img src="product/jean2.jpg" height="300" width="200" alt="Jean">
+                <h3>Jeans</h3>
+                <p>ID:Jean-122</p>
+                <p>₹1,000</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="Jean-122">
+                <input type="hidden" name="product_name" value="Jeans">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="1000">
+                <input type="submit" value="Add to Cart">
+                </form></div>
+                <div>
+                <img src="product/jean3.jpg" height="300" width="200" alt="Jean">
+                <h3>Jeans</h3>
+                <p>ID:Jean-122</p>
+                <p>₹1,200s</p>
+                <form method="POST" action="itemadded.php">
+                <input type="hidden" name="product_id" value="Jean-122">
+                <input type="hidden" name="product_name" value="Jeans">
+                <input type="number" name="quantity" max="5" value="1">
+                <input type="hidden" name="price" value="1200">
+                <input type="submit" value="Add to Cart">
+                </form></div>
+    
+            </div>
+    
+        </div></div>  
+    <!--<center><a class="abc" style="font-size:20px;text-decoration: none;color: rgb(228, 241, 228);border: 3px solid;" 
+    href="https://razorpay.com/payment-button/pl_Kj1tXT1pWoItYF/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button" 
+    target="_blank" rel="noopener">Proceed to Payment</a></center><br><br>--><br>
+
+    <div class="container">
+        <div class="para">
+            <img style="filter: brightness(5);" src="os.png" height="110" width="123">
+            <p>Your one-stop online shop for a wide range of products and groceries. 
+                At VGs, we strive to provide you with a seamless shopping experience right from the comfort of your home.</p>
+                <p>Experience the convenience and ease of shopping at VG's. Explore our diverse range of products and groceries, and enjoy a 
+                    seamless online shopping experience. Shop with confidence and let us take care of all your shopping needs.</p>
+        </div>
+        <div style="padding-top: 30px;">
+        <div class="avatar">
+          <a href="#">
+            <img  src="me.png" style="padding-left: 10px;" height="160" width="120" alt="Skytsunami" />
+          </a></div>
+          <h1>VGs ONLINE SHOPPING</h1>
+          <p>G VAMSHIKRISHNA 21MIS1125</p>
+        </div>
+    
+      
+  <div style="padding-top: 30px;" >
+    <h1><b>Contact Info</b></h1><br> &nbsp;
+      <li class="bc">Email:vamshikrishnaXXXX@gmail.com</li>&nbsp;
+      <li class="bc">Contact Number: +91 799XXX0508 (INDIA)</li>&nbsp;
+      <li class="bc">(+91)-935 306 1720 (INDIA)</li><br>
+      <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+      <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>    
+    </ul>
+  </div></div>
+
+  <script>
+
+    // Slideshow Logic
+    var slides = document.querySelectorAll(".slide");
+    var thumbnails = document.querySelectorAll(".thumbnail");
+    var slideBarSymbols = document.querySelectorAll(".slide-bar-symbol");
+    var currentSlide = 0;
+    var slideInterval;
+
+    function showSlide(index) {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        thumbnails[i].classList.remove("selected");
+        slideBarSymbols[i].classList.remove("active");
+      }
+
+      slides[index].style.display = "block";
+      thumbnails[index].classList.add("selected");
+      slideBarSymbols[index].classList.add("active");
+    }
+
+    function selectSlide(index) {
+      currentSlide = index;
+      showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+      showSlide(currentSlide);
+    }
+
+    function previousSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+      showSlide(currentSlide);
+    }
+
+    function side_slide(direction) {
+      if (direction === 1) {
+        nextSlide();
+      } else if (direction === -1) {
+        previousSlide();
+      }
+      stopSlideShow();
+      startSlideShow();
+    }
+
+    function startSlideShow() {
+      slideInterval = setInterval(nextSlide, 7000); // Change slide every 3 seconds
+    }
+
+    function stopSlideShow() {
+      clearInterval(slideInterval);
+    }
+
+    function handleKeyboardEvent(event) {
+      if (event.key === "ArrowRight") {
+        nextSlide();
+        stopSlideShow();
+        startSlideShow();
+      } else if (event.key === "ArrowLeft") {
+        previousSlide();
+        stopSlideShow();
+        startSlideShow();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyboardEvent);
+
+    startSlideShow(); // Start the auto-sliding
+
+    showSlide(currentSlide); // Show initial slide
+  </script>
+</body>
 </html>
