@@ -176,9 +176,10 @@ b:hover{
     flex-direction: column;
     justify-content: baseline;
 }
-h3{
+h3,p{
     word-wrap:normal;
     width: 250px;
+    font-size: inherit;
 }
 .form1{
     color: white;
